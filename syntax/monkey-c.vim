@@ -5,7 +5,7 @@ endif
 syntax region	monkeyCString		start=/\v"/ skip=/\v\\./ end=/\v"/
 syntax match	monkeyCCharacter	"L\='[^\\]'"
 syntax keyword	monkeyCBoolean		false true
-syntax keyword	monkeyCConditional	if else
+syntax keyword	monkeyCConditional	if else for while
 syntax match	monkeyCInclude		"Toybox.\w\+"
 syntax keyword	monkeyCKeyword		using as extends has instanceof
 syntax keyword	monkeyCStatement	new return continue hidden public protected private
