@@ -5,10 +5,10 @@ endif
 syntax region	monkeyCString		start=/\v"/ skip=/\v\\./ end=/\v"/
 syntax match	monkeyCCharacter	"L\='[^\\]'"
 syntax keyword	monkeyCBoolean		false true
-syntax keyword	monkeyCConditional	if else for while
+syntax keyword	monkeyCConditional	if else for while switch case
 syntax match	monkeyCInclude		"Toybox.\w\+"
-syntax keyword	monkeyCKeyword		using as extends has instanceof try catch
-syntax keyword	monkeyCStatement	new return continue hidden public protected private
+syntax keyword	monkeyCKeyword		using as extends has instanceof try catch this self
+syntax keyword	monkeyCStatement	new return continue hidden public protected private break native
 syntax keyword	monkeyCStorageClass	var const
 syntax keyword	monkeyCStructure	class function module enum
 
